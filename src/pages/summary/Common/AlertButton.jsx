@@ -5,8 +5,9 @@ export default function AlertBanner({ message, variant}){
     message || "An unexpected error ocurred. Please try again later";
     const alertVariant = variant || "danger";
 
-    return
+    return(
         <Alert variant={alertVariant} style={{backgroundColor:"red" }}>
             {alertMessage}
         </Alert>
+    );
 }
